@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+<url>
+ <loc>http://www.yuanjava.cn</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/cartoon.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/it.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/redis.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/life.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/arch.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/link.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/about.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/spring-boot.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/spring-boot.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/spring-cloud.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/spring-linux.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/java.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+ <url>
+ <loc>http://www.yuanjava.cn/jvm.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/python.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/python.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/archives.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/mysql.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/common.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/mongodb.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/docker.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/open-source.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/gitchat.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/java/2019/10/30/about-jvm.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/it/2019/10/27/qiubojun.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/cartoon/2019/10/25/twome.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/it/2019/10/24/interview.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/payment/2019/10/23/money-transferred.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/it/2019/10/22/zalie.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/cartoon/2019/10/21/heihua.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/python/2019/10/20/python-calendar-036.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/python/2019/10/19/python-pathlib-035.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/python/2019/10/18/python-json&amp;pickle-034.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/python/2019/10/15/python-enum-033.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/python/2019/10/13/python-logging-032.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page2</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page3</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page4</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page5</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page6</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page7</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page8</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page9</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page10</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page11</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page12</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page13</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page14</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page15</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page16</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page17</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page18</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page19</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page20</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page21</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page22</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page23</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page24</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page25</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page26</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page27</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/page2</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://www.zhihu.com/people/yuanjava</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/life.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/it.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/arch.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar/spring-boot-examples</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjava/spring-cloud-examples</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar/awesome-spring-boot</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar/spring-boot-leaning</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar/awesome-spring-cloud</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar/diagram</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://www.zhihu.com/people/yuanjava</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/yuanjavar</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://www.zhihu.com/people/yuanjava</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/payment.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/fastdfs.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/mongodb.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/docker.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/open-source.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/gitchat.html</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>http://www.yuanjava.cn/feed.xml</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://github.com/dongchuan/yummy-jekyll</loc>
+ <priority>0.5</priority>
+ <lastmod>2019-11-03</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+</urlset>
