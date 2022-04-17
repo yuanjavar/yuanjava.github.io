@@ -1,6 +1,6 @@
 # 个人博客
 
-这是我的个人博客项，专研技术，技术生活。
+这是我的个人博客项，爱技术，爱生活。
 
 
 访问地址：[http://www.yuanjava.cn/](http://www.yuanjava.cn/)
