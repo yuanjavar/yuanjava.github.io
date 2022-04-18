@@ -135,7 +135,7 @@ root     15586 15463  0 16:08 pts/1    00:00:00 grep --color=auto nginx
 
 查看nginx安装后的配置文件：cat /etc/nginx/nginx.conf，如下图，通过配置可以知道默认监听了80(http)和443(https)两个端口，根据我们的域名是http还是https还看具体的目录
 
-![img.png](http://yuanjava.c/assets/md/deployserver/img_3.png)
+![img.png](http://yuanjava.cn/assets/md/deployserver/img_3.png)
 
 ## 将博客部署到nginx中
 默认安装的nginx，访问时的指向 /usr/share/nginx/html，我们只要把博客编译成html，然后放到该目录下就可以ip地址访问了
