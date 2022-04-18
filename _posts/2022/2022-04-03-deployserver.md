@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何把技术博客部署到自定义服务器
+title: 如何把技术博客部署到自己的服务器
 category: common
 tags: [common]
 excerpt:
@@ -17,7 +17,8 @@ excerpt:
 没有云服务器的可以参考：[如何购买云服务器](http://yuanjava.cn/common/2022/03/22/buyserver.html)
 
 ## 前置安装
-在按照下面的环境时可能会用一些依赖的前置安装，如下指令，如果在安装的过程中少啥安装啥
+
+安装jekyll可能需要依赖下面的前置环境，如果在安装的过程中少啥装啥
 
 ```shell
 yum install zlib
@@ -27,7 +28,7 @@ yum -y install gcc+ gcc-c++
 
 ## 安装ruby
 
-Jekyll依赖于Ruby环境，需要安装Ruby，我是源码安装的ruby-2.5.9版本，操作指令如下，如果中间安装出现什么问题，可以网上找下具体的解决方案
+Jekyll依赖于Ruby环境，需要安装Ruby，我是源码安装的ruby-2.5.9版本，操作指令如下，如果中间安装出现什么问题，可以自省网上找下具体的解决方案
 ```shell
 cd /usr/local
 mkdir ruby
@@ -109,6 +110,7 @@ jekyll serv
 OK，到此，我们服务就已经部署好了并且也run起来了，但是要怎么访问呢？
 
 ## 安装nginx
+nginx 是一个反向代理的工具，可以接受外部请求，把请求转发到具体的服务上去
 ```shell
 # yum 安装 nginx
 yum install nginx
@@ -131,11 +133,14 @@ nginx     1781  1779  0 Apr16 ?        00:00:00 nginx: worker process
 root     15586 15463  0 16:08 pts/1    00:00:00 grep --color=auto nginx
 ```
 
+查看nginx安装后的配置文件：cat /etc/nginx/nginx.conf，如下图，通过配置可以知道默认监听了80(http)和443(https)两个端口，根据我们的域名是http还是https还看具体的目录
+
+![img.png](http://yuanjava.c/assets/md/deployserver/img_3.png)
+
 ## 将博客部署到nginx中
+默认安装的nginx，访问时的指向 /usr/share/nginx/html，我们只要把博客编译成html，然后放到该目录下就可以ip地址访问了
 
-默认安装的nginx的页面地址是 /usr/share/nginx/html，我们只要把博客编译成html，然后放到该目录下就可以ip地址访问了
 ```shell
-
 
 # 进入源码
 cd /usr/local/yuanjava/yuanjava.github.io
@@ -153,15 +158,15 @@ jekyll build --destination=/usr/share/nginx/html
 
 到域名服务商，将域名解析指向服务器ip就可以了，比如我的是阿里云的域名，[域名解析地址](https://dc.console.aliyun.com/next/index?spm=5176.12818093.ProductAndService--ali--widget-home-product-recent.dre2.449616d0kmjY5n#/domain-list/all)
 
-![img.png](http://yuanjava.cn/assets/md/deplyserver/img_1.png)
+![img.png](http://yuanjava.cn/assets/md/deployserver/img_1.png)
 
 ![img.png](http://yuanjava.cn/assets/md/deployserver/img_2.png)
 
 ## 访问域名
 
-在浏览器只能更输入你的域名，接下来就是见证奇迹的时刻了...
+在浏览器中输入你的域名，接下来就是见证奇迹的时刻了...
 
-![img.png](http://yuanjava.cn/assets/md/deplyserver/img.png)
+![img.png](http://yuanjava.cn/assets/md/deployserver/img.png)
 
 
 ##小知识
