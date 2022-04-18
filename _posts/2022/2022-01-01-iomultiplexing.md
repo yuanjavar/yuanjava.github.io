@@ -364,3 +364,11 @@ nginx：Nginx支持epoll、select、kqueue等不同操作系统下的各种IO多
 Reactor框架，netty：无论 C++ 还是 Java，在高性能的网络编程框架的编写上，大多数都是基于 Reactor 模式，其中最为典型的便是 Java 的 Netty 框架，而 Reactor 模式是基于 IO 多路复用的；
 
 IO多路复用讲解完毕，因为IO多路复用模型对于理解Redis，Nginx等高性能框架太有帮助，所以建议大家参照源码，多多揣摩。有过有疑问也可以加我微信：MrWeiki，欢迎一起探讨，一起进步。
+
+
+>
+> 本文为原创文章，转载请标明出处。
+>
+> 本文链接：http://www.yuanjava.cn/linux/2022/01/01/iomultiplexing.html
+>
+>本文出自猿[java的博客](http://yuanjava.cn)

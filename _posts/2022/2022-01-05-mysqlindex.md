@@ -247,4 +247,9 @@ HBase NoSQL数据库，LevelDB
 
   通过今天对MySQL 索引机制，我们分析和对比了很多的数据结构，同时我们也会发现，检索是海量数据查询的一个重要课题，针对不同的场景，我们需要采用不同的数据结构。
 
-
+>
+> 本文为原创文章，转载请标明出处。
+>
+> 本文链接：http://www.yuanjava.cn/mysql/2022/01/05/mysqlindex.html
+>
+>本文出自猿[java的博客](http://yuanjava.cn)
