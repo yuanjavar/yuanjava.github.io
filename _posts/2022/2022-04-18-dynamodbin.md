@@ -58,6 +58,6 @@ dependencies {
 >
 > 本文为原创文章，转载请标明出处。
 >
-> 本文链接：http://yuanjava.cn/common/2022/04/03/deployserver.html
+> 本文链接：http://yuanjava.cn/common/2022/04/18/dynamodbin.html
 >
 >本文出自猿[java的博客](http://yuanjava.cn)
