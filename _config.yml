@@ -111,10 +111,6 @@ navs:
         subHref: /redis.html
         subLabel: Redis 教程
 
-  -
-    href: /linux.html
-    label: linux
-    target: _blank
 
   -
     href: /arch.html
@@ -127,14 +123,7 @@ navs:
       - subHref: /algorithm.html
         subLabel: 算法
 
-  - href: /common.html
-    label: 综合
-    target: _blank
 
-  -
-    href: /life.html
-    label: 生活
-    target: _blank
 
 
   - href: /archives.html
@@ -152,16 +141,26 @@ labels:
     label: Code  
     target: _blank
 
+  - href: /life.html
+    label: 生活
+    target: _blank
 
+  -
+    href: /linux.html
+    label: linux
+    target: _blank
 
+  - href: /common.html
+    label: 综合
+    target: _blank
 
 # selected articles
 classes:
 
   -
     href: /cartoon.html
-    name: 不会笑青年
-    describe: 内心沉稳 ，放荡不羁。
+    name: 视频课程
+    describe: 精益求精，不断创新。
 
 
 
