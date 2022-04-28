@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何在idea中做git多个commit合并成一个
+title: 如何在idea中将git多个commit合并成一个
 category: java
 tags: [java]
 excerpt:
@@ -24,11 +24,11 @@ excerpt:
 
 当第二个unit test 出现指向第一个unit test的向上箭头，代表上一步的Fixup操作成功，然后执行rebase如下图：
 
-![img_1.png](http://yuanjava.cn/assets/md/mcommit/5.png)
+![img.png](http://yuanjava.cn/assets/md/mcommit/5.png)
 
 最后，把合并后的commit push到远程分支，注意此处需要选择强制推送：Force Push，如下图
 
-![img_1.png](http://yuanjava.cn/assets/md/mcommit/6.png)
+![img.png](http://yuanjava.cn/assets/md/mcommit/6.png)
 
 
 合并完之后，就只有一个unit test的commit了
