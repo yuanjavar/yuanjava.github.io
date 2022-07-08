@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lambda系列之函数接口？
+title: Lambda系列之函数式接口？
 category: java
 tags: [java]
 excerpt:
