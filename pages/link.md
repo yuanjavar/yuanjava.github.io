@@ -10,8 +10,9 @@ permalink: /link
 
 ## 个人链接
 
-- [yuanjava](http://www.yuanjava.cn/) - 个人独立博客
+- [yuanjava](http://www.yuanjava.cn/) - 个人技术网站
 - [github](https://github.com/yuanjavar) -  我的github地址
+- [知乎](https://www.zhihu.com/people/yuanjava) - 个人知乎地址
 - [知乎](https://www.zhihu.com/people/yuanjava) - 个人知乎地址
 
 
@@ -21,5 +22,5 @@ permalink: /link
 
 - 网站名称：yuanjava  
 - 网站链接：http://www.yuanjava.cn  
-- 网站描述：Weiki的个人博客，爱技术，爱生活  
+- 网站描述：猿java，专注于java和互联网技术分享  
 

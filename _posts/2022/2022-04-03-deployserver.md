@@ -3,9 +3,8 @@ layout: post
 title: 如何把技术博客部署到自己的服务器
 category: common
 tags: [common]
-excerpt:
---- 
-有了技术博客，如何才能被百度收录，希望被更多的技术人看到呢？
+excerpt: 有了技术博客，如何才能被百度收录，希望被更多的技术人看到呢？
+---
 
 你好，我是Weiki，欢迎来到猿java。
 
