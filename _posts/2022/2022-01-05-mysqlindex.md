@@ -254,6 +254,5 @@ HBase NoSQL数据库，LevelDB
 >本文出自猿[java的博客](http://yuanjava.cn)
 
 ## 最后
-本文从Oracle官网大概讲解了lambda的几个用途，已经一些使用按理，后面的文章我们会一一解析lambda的原理。
 
 如果你觉得本博文对你有帮助，感谢转发给更多的好友，我们将为你呈现更多的干货， 感谢关注公众号：猿java
