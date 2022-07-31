@@ -3,10 +3,8 @@ layout: post
 title: 如何购买云服务器
 category: common
 tags: [common]
-excerpt:
+excerpt: 假如某天公司让你选择云服务，然后部署你们的服务，你会怎么选？
 ---
-
-假如某天公司让你选择云服务，然后部署你们的服务，你会怎么选？
 
 你好，我是Weiki，欢迎来到猿java。
 
