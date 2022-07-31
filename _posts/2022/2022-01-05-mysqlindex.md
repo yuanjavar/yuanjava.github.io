@@ -19,13 +19,13 @@ excerpt: mysql用了这么久，你知道为什么mysql不使用红黑树做索�
 
 在日常工作中，用于索引的数据结构常见的有3种：哈希表、有序数组和搜索树。下面给出一张navicat可视化工具创建索引的截图，可以看出它创建索引使用了 BTREE/HASH两种。(截图是navicat连接mysql数据库)
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/1.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/1.png)
 
 ### **2.1、哈希表**
 
 哈希表是一种以key-value键值对存储数据的结构，比如：java的 hashmap， redis的key-value都是这样一种形式。hash表的实现思路也很简单：用一个哈希函数把 key 换算成数组确定的位置，然后把 value 放在数组的这个位置。
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/2.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/2.png)
 
 从上图我们可以看到，当key的hash值相同的时候，会采用链表的方式把value串起来。
 
@@ -37,7 +37,7 @@ hash表的问题
 
 如下图，如果数据按照id的升序存放到数组中，就形成了一个有序数组，这样既能根据等值查询，也方便范围查询。
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/3.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/3.png)
 
 有序数组问题
 如果仅仅看查询效率，有序数组是比较好的数据结构，但如果有数据的插入和删除，插入和删除点后面的数据需要移动，所以整体性能会下降，因此，有序数组只适合静态存储引擎。
@@ -50,13 +50,13 @@ hash表的问题
 
 二叉树的定义很简单，它是很多其他搜索树的基础，下面给出一张二叉树的示意图
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/4.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/4.png)
 
 #### 2.3.2 二叉搜索树
 
 > 二叉查找树(Binary Search Tree)，是一种特殊的二叉树，其的特点如下： 左子树节点比父节点小，右子树节点值比父节点大。
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/5.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/5.png)
 
 根据二叉搜索树的特点可以使用二分查找法，比如，在二叉查找树中查询5。
 首先，从根节点开始遍历，5 > 3，可以定位5在节点3的右子树。
@@ -67,7 +67,7 @@ hash表的问题
 
 当数据是有序增长，极端情况下，整个二叉搜索树就会变成一棵斜树。
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/6.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/6.png)
 
 #### 2.3.4 平衡二叉树
 
@@ -84,7 +84,7 @@ hash表的问题
 ```
 红黑树如下图所示：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/7.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/7.png)
 
 #### 2.3.6 B-树(Balance Tree)
 ```
@@ -94,7 +94,7 @@ B-树的英文是 Balance Tree，也就是平衡的多路搜索树，它的高�
 
 B-树示意图：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/8.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/8.png)
 
 #### 2.3.7 B+树
 
@@ -104,7 +104,7 @@ B+树是基于B-树做了优化，B+树和B-树的差异如下：
 ```
 B+树示意图：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/9.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/9.png)
 
 
 ## 问题
@@ -125,7 +125,7 @@ MySQL的数据都是存放在磁盘，因此磁盘IO是MySQL的性能瓶颈，�
 
 MyISAM采用的非聚簇索引，B+树的非叶子节点存储索引值和指向子节点的指针，叶子节点上存放的是索引值和数据在磁盘上的物理地址，所以通过索引定位到数据地址后，需要到磁盘上回表获取数据，索引模型示意图如下：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/10.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/10.png)
 
 **Innodb引擎**
 
@@ -136,11 +136,11 @@ Innodb采用的聚簇索引(主键索引)，B+树的非叶子节点(内部节点
 
 聚簇索引示意图如下：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/11.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/11.png)
 
 非聚簇索引示意图如下：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/12.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/12.png)
 
 聚簇索引和非聚簇索引
 
@@ -172,7 +172,7 @@ index(age, sex)) engine=InnoDB;
 ```
 联合索引在 B+树索引模型示意图如下：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/13.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/13.png)
 
 查询分析：
 
@@ -200,7 +200,7 @@ where 条件中的字段都可以匹配索引，但是 where a = ？and c = ?   
 联合索引：index(name, sex)
 B+树索引模型示意图如下：
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/14.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/14.png)
 
 查询分析：
 ```
@@ -238,7 +238,7 @@ LSM-Tree采用的是磁盘顺序写，它是一种多层结构，最上层C0位�
 
 LSM-Tree 示意图
 
-![img.png](http://yuanjava.cn/assets/md/mysqlindex/15.png)
+![img.png](http://yuanjava.cn/assets/md/mysql/15.png)
 
 使用场景
 
