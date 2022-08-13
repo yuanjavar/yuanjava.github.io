@@ -15,7 +15,7 @@ Redis作为NoSQL的翘楚，为什么亚马逊还要推出DynamoDB数据库？�
 DynamoDB 提供内置安全性、连续备份、自动多区域复制、内存缓存和数据导出工具。
 
 
-### DynamoDB是如何工作的？
+## DynamoDB是如何工作的？
 
 下面是Amazon官方给出的一张工作原理图：
 
