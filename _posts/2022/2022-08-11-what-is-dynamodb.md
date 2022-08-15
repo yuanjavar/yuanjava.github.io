@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Amazon DynamoDB是什么？
-category: java
-tags: [java]
+category: DynamoDB
+tags: [DynamoDB]
 excerpt: Redis作为NoSQL的翘楚，为什么亚马逊还要推出DynamoDB数据库？
 ---
 你好，我是Weiki，欢迎来到猿java。
