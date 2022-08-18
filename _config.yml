@@ -84,7 +84,7 @@ navs:
         target: _blank
 
   -
-    href: /spring-boot.html
+    href: /spring.html
     label: spring
     target: _self
     subnav:
@@ -103,7 +103,7 @@ navs:
 
   -
     href: /db.html
-    label: db
+    label: database
     target: _self
     subnav:
 
