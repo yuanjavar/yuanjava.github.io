@@ -1,66 +1,116 @@
 ---
 layout: post
-title: 洋葱架构，六边形架构，DDD分层架构对比
+title: java stream流和for循坏简易比较
 category: java
 tags: [java]
-excerpt: http调用在日常开发中是最常见的，但是
+excerpt: 工作中你用同时使用过java中的for循环和jdk8开始引入的java stream API吗？ 你觉得他们有性能差吗？
 ---
 你好，我是Weiki，欢迎来到猿java。
 
+ 在实际工作中，或许你最开始接触jdk7，或许是jdk8或者是jdk11，对于java中的for循环和jdk8开始引入的java stream的使用大家各持意见，有人说java stream比for循环性能高，有人说java stream晦涩难懂，今天，我们就从代码的长期可维护性的角度来来谈谈 Streaming API和for循环的区别。
 
-在微服务架构模型中，常见的有洋葱架构，六边形架构，DDD分层架构，
+## 比较点
 
-## 六边形架构
-
-这个概念是由 Alistair Cockburn 于2005年在[这篇文章](https://alistair.cockburn.us/hexagonal-architecture/)中介绍的
-
-
-## 洋葱架构
-
-洋葱架构由 Jeffrey Palermo于2008年在[这篇文章](https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/)中介绍，
-目的是从更好的可测试性、可维护性和可靠性的角度来提供构建应用程序的更好方法。
-
-基于控制反转原理。洋葱架构由多个同心层组成，这些层相互连接，指向代表领域的核心。该架构不像经典的多层架构那样依赖于数据层，而是依赖于实际的领域模型。
+- 可读性
+- 语法
+- 表现
 
 
-![img.png](../../assets/md/java/onion-architecture.png)
+## 可读性
 
-![img.png](../../assets/md/java/onion-architecture-zh.png)
-
-### 洋葱架构的层次有哪些？
-
-**领域层**
-
-领域层，位于洋葱架构的最中心，它代表业务和行为对象。这个想法是让你所有的领域对象都在这个核心。它包含所有应用程序域对象。除了域对象之外，您还可以拥有域接口。这些域实体没有任何依赖关系。域对象也应该是扁平的，没有任何繁重的代码或依赖项。
-
-**存储层**
-
-该层在应用程序的域实体和业务逻辑之间创建抽象。在这一层中，我们通常添加接口，这些接口通常通过涉及数据库来提供对象保存和检索行为。该层由数据访问模式组成，这是一种更松散耦合的数据访问方法。我们还创建了一个通用存储库，并添加查询以从源检索数据，将数据从数据源映射到业务实体，并将业务实体中的更改持久化到数据源。
-
-**服务层**
-
-服务层包含具有常用操作的接口，例如添加、保存、编辑和删除。此外，该层用于在 UI 层和存储库层之间进行通信。服务层还可以保存实体的业务逻辑。在这一层中，服务接口与其实现保持分离，牢记松散耦合和关注点分离。
-
-**界面层**
-
-它是最外层，保留 UI 和测试等外围问题。对于 Web 应用程序，它代表 Web API 或单元测试项目。该层实现了依赖注入原理，使应用程序构建了一个松散耦合的结构，并可以通过接口与内部层进行通信。
+如果你是第一次接触 for循环和stream，其实两种语法的可读性都很难。
 
 
-洋葱架构的实现
-Onion Architecture 指南没有提供关于如何实现这些层的方向。架构师应该决定实现，并且可以自由选择任何级别的类、包、模块或任何其他需要添加到解决方案中的内容。
+## 语法
+
+场景一： 筛选出年龄大于20岁的用户
+
+```java
+// 定义一个Person类
+public class Person {
+    private String name;
+    private int age;
+    // getter and setter方法
+}   
+```
+for循坏和stream 实现
+```java
+private void forLoop() {
+    List<Person> list = List.of(p1, p2, p3...pn);
+        List<String> newList = new ArrayList<>();
+        for(Person p : list){
+        if(p.getAge() > 20){
+            newList.add(p.getName());
+        }
+    }
+}
+
+private void streaming(){
+        List<Person> list=List.of();
+        List<String> newList=list.stream()
+        .filter(p->p.getAge()>20)
+        .collect(Collectors.toList());
+}  
+```
+
+场景二： 筛选出年龄大于20岁并且名字带'张'的用户
+
+for循坏和stream 实现
+```java
+private void forLoop() {
+    List<Person> list = List.of(p1, p2, p3...pn);
+        List<String> newList = new ArrayList<>();
+        for(Person p : list){
+        if(p.getAge() > 20 && p.getName().contains("张")){
+            newList.add(p.getName());
+        }
+    }
+}
+
+private void streaming(){
+        List<Person> list=List.of();
+        List<String> newList=list.stream()
+        .filter(p -> p.getAge() > 20)
+        .filter(p -> p.getName().contains("张"))
+        .collect(Collectors.toList());
+}  
+```
+
+场景三： 筛选出年龄在20到30岁并且名字不为空切带'张'的用户
+
+for循坏和stream 实现
+```java
+private void forLoop() {
+    List<Person> list = List.of(p1, p2, p3...pn);
+        List<String> newList = new ArrayList<>();
+        for(Person p : list){
+        if(p.getAge() > 20 && p.getAge() < 30 && StringUtils.isNotEmpty(p.getName()) && p.getName().contains("张")){
+            newList.add(p.getName());
+        }
+    }
+}
+
+private void streaming(){
+        List<Person> list=List.of();
+        List<String> newList=list.stream()
+        .filter(p -> p.getAge() > 20 && p.getAge() < 30)
+        .filter(p -> StringUtils.isNotEmpty(p.getName()) && p.getName().contains("张"))
+        .map(p -> p.getName())
+        .collect(Collectors.toList());
+}  
+```
+
+通过上面的3个case，我们可以看出stream的复杂性比for循环更线性地扩展。另外，我们可以看到stream的filter(过滤器)，更贴近语义，更容易阅读。
 
 
+## 表现
+关于for循环和stream哪种风格表现更好，有很多意见。简短的版本基本上是，如果是一个小列表，for 循环的性能会更好；
+如果列表很大，并行流将执行得更好。 而且由于并行流有相当多的开销，除非你能确定它值得开销，否则不建议使用这些。所以虽然差别不大，但for循环是靠纯粹的性能取胜的。
+话虽如此，性能并不是衡量代码的唯一重要指标。软件工程中的一切都是一种权衡。在这种情况下，一个相关的权衡如下："高性能代码通常不是很可读，而可读代码通常不是很有性能"。由于如今维护成本远高于硬件成本，现在，权衡通常倾向于可读/可维护的代码。因此，除非毫秒性能是关键任务（并且您为此优化了整个堆栈和软件），否则在大多数情况下这不是一个强有力的论据。
 
-## 整洁架构
+## 个人建议
 
-整洁架构是由 Robert “Uncle Bob” Martin 于 2012 年在[这篇文章](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)中介绍的
-
-
-
-## DDD分层架构
-
-
-
+作为程序员，两种方式都必须掌握，为了降低项目的维护成本，请优先考虑使用 Stream API 而不是for循环。 Stream API学习有一定的成本，但从长远利益来看，无论是对项目还是对程序员来说，这种投资都会得到回报。
 
 ## 最后
 如果你觉得本文章对你有帮助，感谢转发给更多的好友，我们将为你呈现更多的干货， 欢迎关注公众号：猿java
