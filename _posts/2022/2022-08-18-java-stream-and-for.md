@@ -1,6 +1,6 @@
 ---
 layout: post
-title: java stream流和for循坏简易比较
+title: java stream流和for循环简易比较
 category: java
 tags: [java]
 excerpt: 工作中你用同时使用过java中的for循环和jdk8开始引入的java stream API吗？ 你觉得他们有性能差吗？
