@@ -207,9 +207,9 @@ ThreadLocal的get()方法比较简单，如果当前线程存在ThreadLocalMap�
 
 最后，我们通过两张图片来总结ThreadLocal
 
-![img.png](http://yuanjava.cn/assets/md/java/threadlocal.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/threadlocal.png)
 
-![img.png](http://yuanjava.cn/assets/md/java/threadlocal2.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/threadlocal2.png)
 
 每个Thread线程类持有一个ThreadLocalMap，ThreadLocalMap中封装了Entry，Entry继承了WeakReference类，因此Entry类有两个字段，referent指向ThreadLocal，value指向用户入参。
 
@@ -292,7 +292,7 @@ ThreadLocal 本身不存储值，它只是作为Entry中的一个key，让Thread
 
 如下图，当ThreadLocalRefA = null时，ThreadLocalA就会被回收，原来指向ThreadLocalA的key就会变为NULL，Thread ReafA引用ThreadA，ThreadA又引用ThreadLocalMapA，ThreadLocalMapA又引用了Entry，Entry对象又引用了value，这个map的key已经为NULL，value则永远无法回收，造成了内存泄露。
 
-![img.png](http://yuanjava.cn/assets/md/java/xielou.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/xielou.png)
 
 内存泄露的解决办法
 

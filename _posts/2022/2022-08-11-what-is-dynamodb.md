@@ -19,7 +19,7 @@ DynamoDB 提供内置安全性、连续备份、自动多区域复制、内存�
 
 下面是Amazon官方给出的一张工作原理图：
 
-![img.png](http://yuanjava.cn/assets/md/java/dydb-work.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/dydb-work.png)
 
 
 ## 特性
