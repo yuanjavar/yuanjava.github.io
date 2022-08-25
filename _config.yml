@@ -71,7 +71,7 @@ navs:
   -
     href: /
     label: java
-    target: _blank
+    target: _self
     subnav:
 
       -
