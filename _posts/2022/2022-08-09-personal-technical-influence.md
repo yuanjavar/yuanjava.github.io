@@ -20,7 +20,7 @@ excerpt: 什么是技术影响力？如何才能建立自己的技术影响力�
 
 技术影响力，技术是前提，只有技术能力过硬，才可能有机会在某个技术领域产生影响力，一般来说，技术发展路线可以有下面两条路，不管是走技术专家路线还是架构师路线，只要你的能力足够的牛，就具备了技术影响力的前提
 
-![img.png](https://www.yuanjava.cn/assets/md/java/tech-load.png)
+![img.png](https://yuanjava.cn/assets/md/java/tech-load.png)
 
 ### 团队内帮助他人
 

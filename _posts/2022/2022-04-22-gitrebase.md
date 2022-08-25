@@ -24,7 +24,7 @@ git rebase origin master
 ```
 该指令会把A提交的点b9223e6作为B的新起点，整体呈一条直线，如下图：
 
-![img.png](https://www.yuanjava.cn/assets/md/git/rebase.png)
+![img.png](https://yuanjava.cn/assets/md/git/rebase.png)
 
 
 ## **git merge**
@@ -33,7 +33,7 @@ git merge origin master
 ```
 该指令执行后，B分支的提交点还是刚从master拉取分支时的bb99d，A，B各有一条提交线，如下图
 
-![img.png](https://www.yuanjava.cn/assets/md/git/merge.png)
+![img.png](https://yuanjava.cn/assets/md/git/merge.png)
 
 ## **最后**
 
@@ -45,9 +45,9 @@ git merge origin master
 >
 > 本文为原创文章，转载请标明出处。
 >
-> 本文链接：https://www.yuanjava.cn/java/2022/04/22/gitrebase.html
+> 本文链接：https://yuanjava.cn/java/2022/04/22/gitrebase.html
 >
->本文出自猿[java的博客](https://www.yuanjava.cn)
+>本文出自猿[java的博客](https://yuanjava.cn)
 
 
 ## 最后

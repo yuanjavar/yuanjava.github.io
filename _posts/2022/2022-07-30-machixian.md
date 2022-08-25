@@ -23,11 +23,11 @@ excerpt: 美食 马齿苋
 “喂，小伙子，要不要买一把，烧菜可好吃了嘞”，我被大妈浓浓的杭州普通话给拉回了现实
 
 本着对生活充满好奇的态度，我也毫不吝啬地用江西普通话回复了大妈：“来一把”，于是我花巨资3块钱买了一把，蔬菜图片如下，不知道有没有认识的小伙伴，你们的叫法是什么？（我们老家的叫法是 毛咪喊）
-![img.png](https://www.yuanjava.cn/assets/md/life/1.png)
+![img.png](https://yuanjava.cn/assets/md/life/1.png)
 
 于是乎，到家后我就把菜洗干净，拍了个照片放到百度上一搜，嘿嘿，还真有，马齿菜，也叫马齿苋，百度百科的解释如下图：
 
-![img.png](https://www.yuanjava.cn/assets/md/life/2.png)
+![img.png](https://yuanjava.cn/assets/md/life/2.png)
 
 
 功效：全草供药用，有清热利湿、解毒消肿、消炎、止渴、利尿作用；种子明目；嫩茎叶可作蔬菜。
@@ -43,11 +43,11 @@ excerpt: 美食 马齿苋
 
 哈哈，一番折腾后，直接上成品
 
-![img.png](https://www.yuanjava.cn/assets/md/life/3.png)
+![img.png](https://yuanjava.cn/assets/md/life/3.png)
 
-![img.png](https://www.yuanjava.cn/assets/md/life/4.png)
+![img.png](https://yuanjava.cn/assets/md/life/4.png)
 
-![img.png](https://www.yuanjava.cn/assets/md/life/5.png)
+![img.png](https://yuanjava.cn/assets/md/life/5.png)
 
 
 
@@ -84,9 +84,9 @@ excerpt: 美食 马齿苋
 
 农村地里的马齿菜图片
 
-![img.png](https://www.yuanjava.cn/assets/md/life/6.png)
+![img.png](https://yuanjava.cn/assets/md/life/6.png)
 
-![img.png](https://www.yuanjava.cn/assets/md/life/7.png)
+![img.png](https://yuanjava.cn/assets/md/life/7.png)
 
 图片有没有唤起你的某些美好回忆，你还知道马齿苋的其他功效吗？欢迎在留言区评论互动
 

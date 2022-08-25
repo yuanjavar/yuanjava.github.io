@@ -15,16 +15,16 @@ excerpt: 如果你的域名是http，在访问网站时，总是会有个烦人�
 
 在 [ssl证书申请传送门](https://yundun.console.aliyun.com/?spm=5176.12818093.ProductAndResource--ali--widget-product-recent.dre10.347316d0EI4wNO&p=cas#/certExtend/free) 这本经典的书籍中有一套关于软件设计的SOLID原则，SOLID 实际上是五个设计原则首字母的缩写，它们分别是：
 
-![img.png](https://www.yuanjava.cn/assets/md/java/ssl-men.png)
+![img.png](https://yuanjava.cn/assets/md/java/ssl-men.png)
 
 购买证书的时候可以绑定你的域名，然后点击验证， 成功后，阿里云服务器会给你的域名自动添加一条解析记录
-![img.png](https://www.yuanjava.cn/assets/md/java/yu.png)
+![img.png](https://yuanjava.cn/assets/md/java/yu.png)
 
 ## 下载证书
 > 本文以nginx为例，其他服务器的可以参考阿里云对应的文档
 
-![img.png](https://www.yuanjava.cn/assets/md/java/download-cert.png) 
-![img.png](https://www.yuanjava.cn/assets/md/java/download-cert2.png)
+![img.png](https://yuanjava.cn/assets/md/java/download-cert.png) 
+![img.png](https://yuanjava.cn/assets/md/java/download-cert2.png)
 
 下载是一个压缩包，压缩包里面有两个文件：xxx.pem, xxx.key
 
@@ -89,7 +89,7 @@ nginx -s reload
 
 ok，所有的配置完成，接下来就是见证奇迹的时候，浏览器输入域名，点击enter，域名前面加锁了代表https生效
 
-![img.png](https://www.yuanjava.cn/assets/md/java/https.png)
+![img.png](https://yuanjava.cn/assets/md/java/https.png)
 
 
 
