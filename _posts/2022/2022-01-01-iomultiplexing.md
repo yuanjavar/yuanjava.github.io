@@ -20,14 +20,14 @@ IO多路复用技术，不管是面试，还是平时的技术积累，它都是
 
 ### 1.1 同步阻塞IO-BIO
 同步阻塞IO：在线程处理过程中，如果涉及到IO操作，那么当前线程会被阻塞，直到IO处理完成，线程才接着处理后续流程。如下图，服务器针对客户端的每个socket都会分配一个新的线程处理，每个线程的业务处理分2步，当步骤1处理完成后遇到IO操作(比如：加载文件)，这时候，当前线程会被阻塞，直到IO操作完成，线程才接着处理步骤2。
-![img.png](https://yuanjava.cn/assets/md/iomultiplexing/img.png)
+![img.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img.png)
 实际使用场景：在Java中使用线程池的方式去连接数据库，使用的就是同步阻塞IO模型。
 
 模型的缺点：因为每个客户端存都需要一个新的线程，势必导致线程被频繁阻塞和切换带来开销。
 
 ### 1.2 同步非阻塞 IO-NIO(New IO)
 同步非阻塞IO：在线程处理过程中，如果涉及到IO操作，那么当前的线程不会被阻塞，而是会去处理其他业务代码，然后等过段时间再来查询 IO 交互是否完成。如下图：Buffer 是一个缓冲区，用来缓存读取和写入的数据；Channel 是一个通道，负责后台对接 IO 数据；而 Selector 实现的主要功能，是主动查询哪些通道是处于就绪状态。Selector复用一个线程，来查询已就绪的通道，这样大大减少 IO 交互引起的频繁切换线程的开销。
-![img_1.png](https://yuanjava.cn/assets/md/iomultiplexing/img_1.png)
+![img_1.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img_1.png)
 
 实际使用场景：Java NIO 正是基于这个 IO 交互模型，来支撑业务代码实现针对 IO 进行同步非阻塞的设计，从而降低了原来传统的同步阻塞 IO 交互过程中，线程被频繁阻塞和切换带的开销。NIO使用的经典案例是Netty框架，Elasticsearch底层实际上就是采用的这种机制。
 
@@ -51,7 +51,7 @@ AIO 是异步IO的缩写，即Asynchronized IO。对于AIO来说，它不是在I
 最后，一起看下”路“和”多路“
 
 在socket 编程中，[ClientIp, ClientPort, ServerIp, ServerPort, Protocol] 5元素可以唯一标识一个socket 连接，基于这个前提，同一个服务的某个端口 可以和 n个客户端建立socket连接，可以通过下图来大致描述：
-![img_2.png](https://yuanjava.cn/assets/md/iomultiplexing/img_2.png)
+![img_2.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img_2.png)
 
 
 所以，每个客户端和服务器的socket 连接就可以看做”一路“，多个客户端和该服务器的socket连接就是”多路“，从而，IO多路就是多个socket连接上的输入输出流，复用就是多个socket连接上的输入输出流由一个线程处理。 因此 IO多路复用可以定义如下：
@@ -72,7 +72,7 @@ while (true) { //循环监听客户端连接请求
 ```
 
 实现网络通信流程如下图
-![img_3.png](https://yuanjava.cn/assets/md/iomultiplexing/img_3.png)
+![img_3.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img_3.png)
 
 基础socket模型，能够实现服务器端和客户端之间的通信，但是程序每调用一次 accept 函数，只能处理一个客户端连接，当有大量的客户端连接时，这种模型处理性能比较差。因此 Linux 提供了高性能的IO多路复用机制来解决这种困境。
 
@@ -152,7 +152,7 @@ for (i = 0; i < maxfd; i++) {
 }
 ```
 select实现网络通信流程如下图：
-![img_4.png](https://yuanjava.cn/assets/md/iomultiplexing/img_4.png)
+![img_4.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img_4.png)
 
 select 函数存在的不足
 
@@ -249,7 +249,7 @@ for (i = 1; i < MAX_OPEN; i++) {
 }
 ```
 poll实现网络通信流程如下图：
-![img_5.png](https://yuanjava.cn/assets/md/iomultiplexing/img_5.png)
+![img_5.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img_5.png)
 
 poll机制解决了select的单个进程最大只能监听1024个socket的限制，但是并没有解决轮询获取就绪fd的问题。
 
@@ -340,7 +340,7 @@ for (int i = 0; i < n; i++) {
 }
 ```
 epoll 进行网络通信的流程如下图：
-![img_6.png](https://yuanjava.cn/assets/md/iomultiplexing/img_6.png)
+![img_6.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img_6.png)
 
 
 **三者的差异**
@@ -351,7 +351,7 @@ epoll 进行网络通信的流程如下图：
 | epoll | 自定义      |    epoll_wait返回就绪的文件描述符 |
 
 实现网络通信的对照图，方便大家看出差异点
-![img_7.png](https://yuanjava.cn/assets/md/iomultiplexing/img_7.png)
+![img_7.png](https://www.yuanjava.cn/assets/md/iomultiplexing/img_7.png)
 
 实现网络通信的对照图
 
@@ -368,9 +368,9 @@ IO多路复用讲解完毕，因为IO多路复用模型对于理解Redis，Nginx
 >
 > 本文为原创文章，转载请标明出处。
 >
-> 本文链接：https://yuanjava.cn/linux/2022/01/01/iomultiplexing.html
+> 本文链接：https://www.yuanjava.cn/linux/2022/01/01/iomultiplexing.html
 >
->本文出自猿[java的博客](https://yuanjava.cn)
+>本文出自猿[java的博客](https://www.yuanjava.cn)
 
 ## 最后
 

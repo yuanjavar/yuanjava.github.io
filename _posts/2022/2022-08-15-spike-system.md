@@ -16,7 +16,7 @@ excerpt: 说起秒杀，我想大家肯定不陌生，x里的双十一，x东的
 
 秒杀系统本质上就是一个满足高并发、高性能和高可用的分布式系统。下面给出一张下单交互概要图：
 
-![img.png](https://yuanjava.cn/assets/md/java/spike-overview.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/spike-overview.png)
 
 
 ## 秒杀系统的特点
@@ -152,7 +152,7 @@ excerpt: 说起秒杀，我想大家肯定不陌生，x里的双十一，x东的
 ## 总结
 
 下面给出一张秒杀系统常用的架构图，百种业务百种架构，一个秒杀系统看似简单，其实包含了很多架构的思想，从前端到后端，怎么全局把控，对于各个服务怎么去做高可用，高性能，可扩展保证。如何设计缓存，如何保证缓存和数据库的数据一致性，服务达到瓶颈时，如何做服务降级，限流。
-![img.png](https://yuanjava.cn/assets/md/java/spike-arc.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/spike-arc.png)
 
 一般我们遵从几个原则：
 1. 前后端交互的数据尽量少

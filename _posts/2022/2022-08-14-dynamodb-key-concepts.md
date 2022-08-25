@@ -11,7 +11,7 @@ DynamoDB作为亚马逊重磅推出的NoSql数据库，在亚马逊去Oracle数�
 
 在讲概念之前，我们先来看一张DynamoDB的table的截图，是不是和Mysql这种关系数据库的表很相似
 
-![img.png](https://yuanjava.cn/assets/md/java/dynamodb-table.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/dynamodb-table.png)
 
 ## DynamoDB核心概念
 
@@ -37,7 +37,7 @@ Primary keys：主键，用来唯一标识表中的每一行数据(Item)，类�
 
 如下图：仅设置了用于分区的 Partition key为简单主键，分区的 Partition key 和 排序的Sort key 同时设置时为复合主键。 不管是使用简单的主键还是复合主键，都能唯一标识DynamoDB表中的一个Item。
 
-![img.png](https://yuanjava.cn/assets/md/java/dynamodb-primary-key.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/dynamodb-primary-key.png)
 
 ## Secondary indexes
 
@@ -46,7 +46,7 @@ Secondary Indexes：二级索引
 有使用过mysql关系型数据库的小伙伴一定知道，在Mysql中主键可以唯一标识一条记录，但是有时候我们不仅仅是依赖主键进行查询，比如，在订单表中，除了可以通过主键订单id来查询，我们还希望通过用户id来查询订单；类同，在DynamoDB中把主键以外的索引都称为二级索引，二级索引有本地二级索引和全局二级索引两种类型。
 下面为table索引的一张截图：
 
-![img.png](https://yuanjava.cn/assets/md/java/dynamodb-index.png)
+![img.png](https://www.yuanjava.cn/assets/md/java/dynamodb-index.png)
 
 ### local secondary indexes
 
