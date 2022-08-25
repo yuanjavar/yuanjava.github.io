@@ -1,3 +1,2 @@
 User-Agent: *
 Allow: /
-Sitemap: https://www.yuanjava.cn/sitemap.xml
