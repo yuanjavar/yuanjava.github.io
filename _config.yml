@@ -120,7 +120,7 @@ navs:
         subLabel: DynamoDB
 
   -
-    href: /arch.html
+    href: /
     label: 架构
     subnav:
 
