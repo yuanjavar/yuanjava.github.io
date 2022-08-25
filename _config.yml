@@ -69,7 +69,7 @@ navs:
 
 
   -
-    href: /java.html
+    href: /
     label: java
     target: _blank
     subnav:
@@ -84,7 +84,7 @@ navs:
         target: _blank
 
   -
-    href: /spring.html
+    href: /
     label: spring
     target: _self
     subnav:
@@ -132,12 +132,11 @@ navs:
 
 
   -
-    href: /sre.html
+    href: /
     label: 友链
     subnav:
       - subHref: https://wiki.eryajf.net/
         subLabel: 二丫讲梵-运维
-
 
 
   - href: /archives.html
@@ -145,11 +144,8 @@ navs:
     target: _self
 
 
-
-
 # labels. my blog key words
 labels:
-
   -
     href: /open-source.html
     label: Code  
