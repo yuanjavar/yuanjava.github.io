@@ -102,7 +102,7 @@ navs:
 
 
   -
-    href: /db.html
+    href: /
     label: database
     target: _self
     subnav:
@@ -119,7 +119,6 @@ navs:
         subHref: /DynamoDB.html
         subLabel: DynamoDB
 
-
   -
     href: /arch.html
     label: 架构
@@ -131,6 +130,13 @@ navs:
       - subHref: /algorithm.html
         subLabel: 算法
 
+
+  -
+    href: /sre.html
+    label: 友链
+    subnav:
+      - subHref: https://wiki.eryajf.net/
+        subLabel: 二丫讲梵-运维
 
 
 
