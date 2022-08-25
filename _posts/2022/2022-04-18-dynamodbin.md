@@ -54,14 +54,6 @@ dependencies {
   }
 ```
 
->
-> 本文为原创文章，转载请标明出处。
->
-> 本文链接：http://yuanjava.cn/common/2022/04/18/dynamodbin.html
->
->本文出自猿[java的博客](http://yuanjava.cn)
-
-
 ## 最后
 
 如果你觉得本博文对你有帮助，感谢转发给更多的好友，我们将为你呈现更多的干货， 感谢关注公众号：猿java

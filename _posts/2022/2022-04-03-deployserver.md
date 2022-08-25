@@ -11,9 +11,9 @@ excerpt: 有了技术博客，如何才能被百度收录，希望被更多的�
 上篇博客我们分享了如何使用GitHub Pages+Jekyll搭建免费的技术博客网站，但是上篇也介绍过毕竟是免费的，因此使用也会受到一定的制约，最重要是如果不能被百度收录，那就更糟糕，因此今天我们就来分享下如果把自己的博客迁移到自己的服务器上。
 > 温馨提示：在进行今天的实操之前你得具备：1个已经备案的域名 + 1台云服务器
 
-没有备案域名的可以参考：[如何搭建自己免费的技术博客](http://www.yuanjava.cn/common/2022/03/21/domain.html)
+没有备案域名的可以参考：[如何搭建自己免费的技术博客](https://www.yuanjava.cn/common/2022/03/21/domain.html)
 
-没有云服务器的可以参考：[如何购买云服务器](http://yuanjava.cn/common/2022/03/22/buyserver.html)
+没有云服务器的可以参考：[如何购买云服务器](https://yuanjava.cn/common/2022/03/22/buyserver.html)
 
 ## 前置安装
 
@@ -134,7 +134,7 @@ root     15586 15463  0 16:08 pts/1    00:00:00 grep --color=auto nginx
 
 查看nginx安装后的配置文件：cat /etc/nginx/nginx.conf，如下图，通过配置可以知道默认监听了80(http)和443(https)两个端口，根据我们的域名是http还是https还看具体的目录
 
-![img.png](http://yuanjava.cn/assets/md/deployserver/img_3.png)
+![img.png](https://yuanjava.cn/assets/md/deployserver/img_3.png)
 
 ## 将博客部署到nginx中
 默认安装的nginx，访问时的指向 /usr/share/nginx/html，我们只要把博客编译成html，然后放到该目录下就可以ip地址访问了
@@ -157,15 +157,15 @@ jekyll build --destination=/usr/share/nginx/html
 
 到域名服务商，将域名解析指向服务器ip就可以了，比如我的是阿里云的域名，[域名解析地址](https://dc.console.aliyun.com/next/index?spm=5176.12818093.ProductAndService--ali--widget-home-product-recent.dre2.449616d0kmjY5n#/domain-list/all)
 
-![img.png](http://yuanjava.cn/assets/md/deployserver/img_1.png)
+![img.png](https://yuanjava.cn/assets/md/deployserver/img_1.png)
 
-![img.png](http://yuanjava.cn/assets/md/deployserver/img_2.png)
+![img.png](https://yuanjava.cn/assets/md/deployserver/img_2.png)
 
 ## 访问域名
 
 在浏览器中输入你的域名，接下来就是见证奇迹的时刻了...
 
-![img.png](http://yuanjava.cn/assets/md/deployserver/img.png)
+![img.png](https://yuanjava.cn/assets/md/deployserver/img.png)
 
 
 ##小知识
@@ -187,7 +187,7 @@ apt-get install 软件名称  // 针对ubuntu系统
 
 该方式需要我们去下载包，然后解压，编译，安装，相对 yum 比较麻烦一点，整体流程如下：
 ```shell
-wget http://xxxx.tar
+wget https://xxxx.tar
 tar zxvf xxxx.tar
 cd xxxx
 ./configure --prefix=目录 //指定目录安装
@@ -195,14 +195,6 @@ make & make install
 ```
 
 到此，我们的部署分享就结束了，建议大家有条件的一定实操下哦！
-
-
->
-> 本文为原创文章，转载请标明出处。
->
-> 本文链接：http://yuanjava.cn/common/2022/04/03/deployserver.html
->
->本文出自猿[java的博客](http://yuanjava.cn)
 
 
 ## 最后

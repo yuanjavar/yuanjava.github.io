@@ -249,7 +249,7 @@ HBase NoSQL数据库，LevelDB
 >
 > 本文为原创文章，转载请标明出处。
 >
-> 本文链接：http://www.yuanjava.cn/mysql/2022/01/05/mysqlindex.html
+> 本文链接：https://www.yuanjava.cn/mysql/2022/01/05/mysqlindex.html
 >
 >本文出自猿[java的博客](http://yuanjava.cn)
 

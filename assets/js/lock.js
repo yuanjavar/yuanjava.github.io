@@ -69,7 +69,7 @@ var _unlock = function() {
 var _detect = function() {
 	console.log('Detecting Token', token);
 	$.ajax({
-		url : 'http://yuanjava.cn/jfinal/wx/',
+		url : 'https://yuanjava.cn/jfinal/wx/',
 		method : 'GET',
 		data : {
 			token : token

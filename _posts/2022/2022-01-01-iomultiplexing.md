@@ -368,7 +368,7 @@ IO多路复用讲解完毕，因为IO多路复用模型对于理解Redis，Nginx
 >
 > 本文为原创文章，转载请标明出处。
 >
-> 本文链接：http://www.yuanjava.cn/linux/2022/01/01/iomultiplexing.html
+> 本文链接：https://www.yuanjava.cn/linux/2022/01/01/iomultiplexing.html
 >
 >本文出自猿[java的博客](http://yuanjava.cn)
 
