@@ -335,6 +335,12 @@
   <lastmod>2022-08-23</lastmod>
   <changefreq>daily</changefreq>
  </url>
+ <url>
+  <loc>https://www.yuanjava.cn/dynamodb/2022/08/26/dynamodb-local-secondary-index.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2022-08-26</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
 
 
 </urlset>
