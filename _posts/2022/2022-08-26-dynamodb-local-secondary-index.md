@@ -7,11 +7,10 @@ excerpt: DynamoDB的本地二级索引(DynamoDB Local Secondary Indexes)是什�
 ---
 你好，我是Weiki，欢迎来到猿java。
 
-前面文章我们大概学习了DynamoDB有2种类型的索引：本地二级索引和全局二级索引，那么本地二级索引是什么，它有什么作用呢？今天我们就来一起聊聊DynamoDB的本地二级索引
-
+从前面的文章我们知道了DynamoDB有2种类型的二级索引：本地二级索引和全局二级索引，那么两种索引有什么相似点和区别呢？今天我们就来先聊聊DynamoDB的本地二级索引。
 
 ## 概念
-本地二级索引本质上是一种数据结构(类同于mysql中的索引的概念)。每个本地二级索引必须和一个表关联，这个表称为索引的基表，级索引可以包含基表中的某些或者全部属性。
+本地二级索引本质上是一种数据结构(类同于mysql中的索引的概念)。DynamoDB要求每个本地二级索引必须和一个表关联，这个表称为索引的基表，索引可以包含基表中的某些或者全部属性。
 如下图，可以把索引看作和表一样的数据结构，这样我们就能可以使用Query或者Scan从索引中检索数据。
 
 ![img.png](https://www.yuanjava.cn/assets/md/dynamodb/concept.png)
@@ -32,11 +31,11 @@ excerpt: DynamoDB的本地二级索引(DynamoDB Local Secondary Indexes)是什�
 
 ## 本地二级索引的创建
 
-创建本地二级索引的方式有多种，这里提供两种常见的方式
+创建本地二级索引的方式有多种，这里提供3种常见的方式：控制台、aws指令、代码。
 
-**控制台可视化创建**
+**控制台**
 
-操作可以参考下图：
+控制台的有点就是能可视化创建，操作可以参考下图：
 
 ![img.png](https://www.yuanjava.cn/assets/md/dynamodb/create-table1.png)
 ![img.png](https://www.yuanjava.cn/assets/md/dynamodb/create-table2.png)
@@ -113,6 +112,17 @@ $ aws dynamodb create-table \
 ```
 
 
+**代码**
+
+```java
+LocalSecondaryIndex localSecondaryIndex = new LocalSecondaryIndex()
+    .withIndexName("AlbumTitleIndex").withKeySchema(indexKeySchema).withProjection(projection);
+
+ArrayList<LocalSecondaryIndex> localSecondaryIndexes = new ArrayList<LocalSecondaryIndex>();
+localSecondaryIndexes.add(localSecondaryIndex);
+createTableRequest.setLocalSecondaryIndexes(localSecondaryIndexes);
+```
+
 ## 本地二级索引的使用
 
 在上文中我们创建了一个本地二级索引 Age-index，我们需要使用该本地二级索引从test表中查询age=30的用户，java代码例子如下：
@@ -144,11 +154,13 @@ public class Test {
 
 ## 注意事项
 
-- 本地二级索引与基表拥有相同的Hash键(Partition key)，不同的Range键(Sort key)；
-- 本地二级索引只能在具有复合主键的表上添加并且是创建基表时创建，不能在现有的表上去添加；
+- 本地二级索引与基表拥有相同的分区键(Partition key)，不同的排序键(Sort key)；
+- 本地二级索引只能在有复合主键的基表上添加，并且在创建基表时创建，不能在现有的表上去添加；
 - 对于任何本地二级索引，每个不同的分区键值(Partition key)最多可以存储10GB的数据，此数字包括基表中的所有Item，以及索引中具有相同分区键值的所有Item；
 - 每个本地二级索引都会自动包含其基表中的分区键和排序键；
 - DynamoDB会自动维护本地二级索引，当表中有增、删、改操作时，DynamoDB 会自动把数据的变动维护到索引中；
+- 为了获得更大的查询或扫描灵活性，每个基表最多可以创建五个本地二级索引；
+- 查询本地二级索引时，如果属性已经投影在索引中则直接查询，如果索引中没有，DynamoDB 会自动从基表中获取这些属性，但是可能会造成更长的延迟时间和成本； 
 
 
 ## 吞吐量和成本权衡
@@ -165,12 +177,13 @@ public class Test {
 
 ## 本地二级索引适用范围
 
-本地二级索引限制了必须和基表拥有相同的Partition key，而Sort key可以灵活变更，因此 本地二级索引其实就是扩展了基表复合主键的Sort key。
+本地二级索引限制了必须和基表拥有相同的分区键(Partition key)，而排序键(Sort key)可以灵活变更，因此 本地二级索引其实就是扩展了基表复合主键的Sort key。
 
 
 ## 下级预告
 
-本地二级索引限制了必须和基表拥有相同的Partition key，假如基表的Partition key为Id， Sort key为UserId， 而现在查询的场景是：Age为18，Name包含'张'的所有用户，我们该如何创建索引？欲知详情，请看下篇 "全局二级索引"
+本地二级索引限制了必须和基表拥有相同的Partition key，假如基表的Partition key为Id， Sort key为UserId， 而现在查询的场景是：Age为18，Name包含'张'的所有用户，我们该如何创建索引？
+欲知详情，请看下篇 [DynamoDB系列之--全局二级索引](https://www.yuanjava.cn/dynamodb/2022/08/27/dynamodb-global-secondary-index.html)
 
 ## 参考文档
 
