@@ -7,7 +7,7 @@ excerpt: DynamoDB的本地二级索引(DynamoDB Local Secondary Indexes)是什�
 ---
 你好，我是Weiki，欢迎来到猿java。
 
-上面文章我们大概学习了DynamoDB有2种类型的索引：本地二级索引和全局二级索引，那么本地二级索引是什么，它有什么作用呢？今天我们就来一起聊聊DynamoDB的本地二级索引
+前面文章我们大概学习了DynamoDB有2种类型的索引：本地二级索引和全局二级索引，那么本地二级索引是什么，它有什么作用呢？今天我们就来一起聊聊DynamoDB的本地二级索引
 
 
 ## 概念
