@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DynamoDB 如何做in查询
+title: DynamoDB系列之--如何做in查询
 category: DynamoDB
 tags: [DynamoDB]
 excerpt: DynamoDB是亚马逊内部一款功能强大的NoSql数据库，那么DynamoDB怎么实现和mysql一样的in查询呢？

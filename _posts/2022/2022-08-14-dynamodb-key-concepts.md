@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DynamoDB 几个核心的概念
+title: DynamoDB系列之--几个核心的概念
 category: DynamoDB
 tags: [DynamoDB]
 excerpt: DynamoDB作为亚马逊重磅推出的NoSql数据库，在亚马逊去Oracle数据库之后也开始在使用自家的DynamoDB，那么DynamoDB 有哪些核心的概念呢？

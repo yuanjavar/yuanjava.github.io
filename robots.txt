@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Crawl-delay: 60
-Sitemap: https://www.yuanjava.cnsitemap.xml
+Sitemap: https://www.yuanjava.cn/sitemap.xml
