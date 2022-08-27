@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何理解设计原则中的单一职责原则？
+title: SOLID设计原则系列之--单一职责原则
 category: framework
 tags: [framework]
 excerpt: 在日常开发工作中，经常会听到有经验的技术念叨要注意接口的单一职责，很多初级程序员甚至工作了好多年的程序员都会简单的把它理解成一个类就干一件事，那么事实真的是这样吗？
