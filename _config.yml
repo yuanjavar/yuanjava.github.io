@@ -55,10 +55,15 @@ paginate_path: 'page:num'
 # Navigation. top menu list
 menus:
 
+  - href: /link.html
+    label: 友链
+    target: _self
   -
     href: /about.html
     label: 关于
     target: _self
+
+
 
 # Navigation. main menu list
 navs:
@@ -66,7 +71,6 @@ navs:
   -
     href: /
     label: 主页
-
 
   -
     href: /
@@ -103,7 +107,7 @@ navs:
 
   -
     href: /
-    label: database
+    label: 数据库
     target: _self
     subnav:
 
@@ -130,20 +134,10 @@ navs:
       - subHref: /algorithm.html
         subLabel: 算法
 
-
-  -
-    href: /
-    label: 友链
-    subnav:
-      - subHref: https://wiki.eryajf.net/
-        subLabel: 二丫讲梵-运维
-
   -
     href: /interview.html
     label: 面试
     target: _self
-
-
 
   - href: /archives.html
     label: 归档
