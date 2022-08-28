@@ -138,6 +138,12 @@ navs:
       - subHref: https://wiki.eryajf.net/
         subLabel: 二丫讲梵-运维
 
+  -
+    href: /interview.html
+    label: 面试
+    target: _self
+
+
 
   - href: /archives.html
     label: 归档
