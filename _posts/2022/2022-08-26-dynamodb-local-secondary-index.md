@@ -188,7 +188,7 @@ public class Test {
 ## 下级预告
 
 本地二级索引限制了必须和基表拥有相同的Partition key，假如基表的Partition key为Id， Sort key为UserId， 而现在查询的场景是：Age为18，Name包含'张'的所有用户，我们该如何创建索引？
-欲知详情，请看下篇 [DynamoDB系列之--全局二级索引](https://www.yuanjava.cn/dynamodb/2022/08/27/dynamodb-global-secondary-index.html)
+欲知详情，请看下篇 [DynamoDB系列之--全局二级索引](https://www.yuanjava.cn/dynamodb/2022/08/28/dynamodb-global-secondary-index.html)
 
 ## 参考文档
 

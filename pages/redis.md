@@ -2,7 +2,7 @@
 layout: page
 title: Redis 系列文章
 titlebar: redis
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; redis 学习教程系列文章
+subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp;  redis使用 redis优化 redis原理
 menu: redis
 css: ['blog-page.css']
 permalink: /redis
