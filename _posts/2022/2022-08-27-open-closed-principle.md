@@ -12,7 +12,7 @@ excerpt: 开闭原则是什么？它在软件设计中起到了什么作用？
 
 ## 什么是开闭原则
 
-开放封闭原则（Open–closed principle, OCP），是Bertrand Meyer 在1988年提出的，该设计原则指出：
+开放封闭原则，英文是：Open–closed principle， 简称OCP，是该原则是 Bertrand Meyer 在1988年提出的，原则指出：
 
 > Software entities should be open for extension, but closed for modification.
 >

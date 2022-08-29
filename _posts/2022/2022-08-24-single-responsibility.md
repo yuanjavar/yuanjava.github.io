@@ -10,18 +10,11 @@ excerpt: 在日常开发工作中，经常会听到有经验的技术念叨要�
 在日常开发工作中，经常会听到有经验的技术念叨要注意接口的单一职责，很多初级程序员甚至工作了好多年的程序员都会简单的把它理解成一个类就干一件事，那么事实真的是这样吗？今天就让我们来聊聊单一职责到底是什么。
 
 
-## SOLID是什么
-在 [架构整洁之道](https://book.douban.com/subject/30333919/) 这本经典的书籍中有一套关于软件设计的SOLID原则，SOLID 实际上是五个设计原则首字母的缩写，它们分别是：
 
-- 单一职责原则（Single responsibility principle, SRP）
-- 开放封闭原则（Open–closed principle, OCP） 
-- Liskov 替换原则（Liskov substitution principle, LSP）
-- 接口隔离原则（Interface segregation principle, ISP）
-- 依赖倒置原则（Dependency inversion principle, DIP）
 
 ## 单一职责原则
 
-单一职责原则，这个名字非常容易让我们望文生义，理解成一个类只干一件事。既然 SOLID 原则是由 Robert C. Martin 提出和完善的，那么可以先看看 [作者对单一职责原则的描述](http://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)，这里摘取了作者关于单一职责的原文：
+单一职责原则，英文是：Single responsibility principle，简称：SRP。这个名字非常容易让我们望文生义，理解成一个类只干一件事。既然 SOLID 原则是由 Robert C. Martin 提出和完善的，那么可以先看看 [作者对单一职责原则的描述](http://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)，这里摘取了作者关于单一职责的原文：
 
 ```text
 The Single Responsibility Principle (SRP) states that each software module should have one and only one reason to change. 
