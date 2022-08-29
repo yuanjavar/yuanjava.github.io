@@ -2,7 +2,7 @@
 layout: page
 title: 架构系列文章
 titlebar: framework
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 架构 学习系列文章
+subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 软件设计原则 设计模式 分布式架构
 menu: framework
 css: ['blog-page.css']
 permalink: /framework
