@@ -28,17 +28,17 @@ excerpt: 假如某天公司让你选择云服务，然后部署你们的服务�
 
 选择产品->云服务器Ecs-> 立即购买
 
-![img.png](https://www.yuanjava.cn/assets/md/server/img.png)
+![img.png](https://www.yuanjava.cn/assets/md/common/img.png)
 
-![img.png](https://www.yuanjava.cn/assets/md/server/img_1.png)
+![img.png](https://www.yuanjava.cn/assets/md/common/img_1.png)
 
 ## 3. 配置选择
 
 如下图操作，选择配置的时候，需要配置一个服务的密码，等下用来登录服务器验权使用
 
-![img.png](https://www.yuanjava.cn/assets/md/server/img_2.png)
+![img.png](https://www.yuanjava.cn/assets/md/common/img_2.png)
 
-![img.png](https://www.yuanjava.cn/assets/md/server/img_3.png)
+![img.png](https://www.yuanjava.cn/assets/md/common/img_3.png)
    
    | 配置名        | 配置值           | 说明  |
    | ------------- |:-------------:| -----:|
@@ -58,7 +58,7 @@ excerpt: 假如某天公司让你选择云服务，然后部署你们的服务�
 付款成功后就有几分钟的等待时间，帮你初始化一台云服务器，然后到控制台就可以查看到了[Ecs云服务控制台](https://ecs.console.aliyun.com/?spm=5176.12818093.ProductAndService--ali--widget-home-product-recent.dre1.449616d0KWrF16#/home)，在服务台上你就可以看到自己服务的一些信息，我选购的是2c2g
 包年包月，一年大概700左右，大家如果是学习使用选最便宜的就好了，公司使用的话根据具体选择，后期都是动态升降配置的。
 
-![img.png](https://www.yuanjava.cn/assets/md/server/server.png)
+![img.png](https://www.yuanjava.cn/assets/md/common/server.png)
 
 ## 5. 登录云服务
    
@@ -66,15 +66,15 @@ excerpt: 假如某天公司让你选择云服务，然后部署你们的服务�
 
 如图操作，账户/密码 为 root/自己购买服务器时设置的密码
 
-![img.png](https://www.yuanjava.cn/assets/md/server/img.png)
+![img.png](https://www.yuanjava.cn/assets/md/common/img.png)
 
-![img.png](https://www.yuanjava.cn/assets/md/server/img_5.png)
+![img.png](https://www.yuanjava.cn/assets/md/common/img_5.png)
 
 2. 外部的终端(mac自带的terminal，zsh, 或者SecureCRT等等)
 
 如图外SecureCRT登录的界面
 
-![img.png](https://www.yuanjava.cn/assets/md/server/img_5.png) 
+![img.png](https://www.yuanjava.cn/assets/md/common/img_5.png) 
 
 ## 6. 指令操作服务
 
