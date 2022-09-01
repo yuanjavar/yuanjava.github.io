@@ -72,19 +72,7 @@
  <changefreq>daily</changefreq>
 </url>
 <url>
- <loc>https://www.yuanjava.cn/spring-boot.html</loc>
- <priority>0.5</priority>
- <lastmod>2019-11-03</lastmod>
- <changefreq>daily</changefreq>
-</url>
-<url>
  <loc>https://www.yuanjava.cn/spring-cloud.html</loc>
- <priority>0.5</priority>
- <lastmod>2019-11-03</lastmod>
- <changefreq>daily</changefreq>
-</url>
-<url>
- <loc>https://www.yuanjava.cn/spring-linux.html</loc>
  <priority>0.5</priority>
  <lastmod>2019-11-03</lastmod>
  <changefreq>daily</changefreq>
@@ -104,12 +92,6 @@
 <url>
  <loc>https://www.yuanjava.cn/mysql.html</loc>
  <priority>0.5</priority>
- <changefreq>daily</changefreq>
-</url>
-<url>
- <loc>https://www.yuanjava.cn/python.html</loc>
- <priority>0.5</priority>
- <lastmod>2022-01-13</lastmod>
  <changefreq>daily</changefreq>
 </url>
 <url>
@@ -162,18 +144,6 @@
 </url>
 <url>
  <loc>https://www.yuanjava.cn/java/2022/04/24/mergecommit.html</loc>
- <priority>0.5</priority>
- <lastmod>2019-11-03</lastmod>
- <changefreq>daily</changefreq>
-</url>
-<url>
- <loc>https://www.yuanjava.cn/about.html</loc>
- <priority>0.5</priority>
- <lastmod>2019-11-03</lastmod>
- <changefreq>daily</changefreq>
-</url>
-<url>
- <loc>https://www.yuanjava.cn/common.html</loc>
  <priority>0.5</priority>
  <lastmod>2019-11-03</lastmod>
  <changefreq>daily</changefreq>
