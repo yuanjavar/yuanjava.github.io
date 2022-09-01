@@ -1,8 +1,8 @@
 ---
 layout: page
-title: jvm 系列文章
+title: jvm专栏
 titlebar: java
-subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; jvm 系列文章，从底层剖析java
+subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; jvm原理
 menu: jvm
 css: ['blog-page.css']
 permalink: /jvm

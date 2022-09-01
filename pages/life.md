@@ -2,7 +2,7 @@
 layout: page
 title: 生活杂谈
 titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 爱生活，笑谈人生
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 爱生活，爱技术
 menu: life
 css: ['blog-page.css']
 permalink: /life

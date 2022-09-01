@@ -1,8 +1,8 @@
 ---
 layout: page
-title: DynamoDB 系列文章
+title: DynamoDB专栏
 titlebar: DynamoDB
-subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; DynamoDB 系列文章
+subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; DynamoDB使用 DynamoDB原理
 menu: DynamoDB
 css: ['blog-page.css']
 permalink: /DynamoDB

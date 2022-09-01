@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Redis 系列文章
+title: Redis专栏
 titlebar: redis
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp;  redis使用 redis优化 redis原理
 menu: redis

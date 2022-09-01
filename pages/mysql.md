@@ -1,6 +1,6 @@
 ---
 layout: page
-title: mysql 系列文章
+title: mysql专栏
 titlebar: mysql
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; mysql使用 mysql优化 mysql原理
 menu: mysql

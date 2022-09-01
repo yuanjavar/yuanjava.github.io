@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Spring boot 系列文章
+title: Spring boot专栏
 titlebar: spring-boot
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 猿java Spring boot 系列文章
 menu: spring-boot

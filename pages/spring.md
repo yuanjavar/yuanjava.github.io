@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Spring系列文章，Spring遇到的各种坑
+title: Spring专栏
 titlebar: spring
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 猿java，spring系列文章
+subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; spring使用 spring原理 spring遇坑记
 menu: spring
 css: ['blog-page.css']
 permalink: /spring

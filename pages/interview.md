@@ -1,6 +1,6 @@
 ---
 layout: page
-title: java面试系列文章
+title: java面试系列专栏
 titlebar: interview
 subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; java面试、面试宝典、面试技巧
 menu: interview

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 算法 系列文章
+title: 算法专栏
 titlebar: algorithm
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 算法 学习系列文章
 menu: arch
