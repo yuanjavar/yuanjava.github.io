@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 为什么spring 不推荐 @Autowired 用于字段注解？
-category: interview
-tags: [interview]
+category: spring
+tags: [spring]
 description: 为什么spring 不推荐 @Autowired 用于字段注解？
 keywords: spring, spring autowired注解, spring字段注解
 excerpt: 为什么spring 不推荐 @Autowired 用于字段注解？
