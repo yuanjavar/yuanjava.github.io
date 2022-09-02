@@ -86,19 +86,30 @@ PropertyBean类的applicationName字段被static修饰，导致获取为null，�
 使用PropertyBean的地方是new出来而不是通过依赖注入的，获取值为null。如下代码：
 
 ```java
+@Component
+public class PropertyBean {
+    @Value("${application.name}")
+    private String applicationName;
+
+    // 此处 applicationName有值
+    public static void main(String[] args) {
+        System.out.println("applicationName=" + applicationName);
+    }
+}
+
 @Service
 public class SpringElService {
     public String getApplicationName(){
         // 通过new PropertyBean()获取对象
         PropertyBean bean = new PropertyBean();
+        // 此处 applicationName为null
         return bean.getApplicationName();
     }
 }
 ```
 
-这种场景最容易被忽视，为什么获取的值为null？我画了一个简单的抽象图帮助理解，场景三种有两种bean，一种是Spring容器中管理的bean，applicationName的值可以spring主动注入，
-一种是手动创建的bean，String类型的applicationName，如果没有显示赋值，默认为空。通过图解是不是就能很好的理解为什么这种场景获取值为null了。
-
+这种场景最容易被忽视，PropertyBean类中applicationName有值，SpringElService类中却为null，为什么？
+为了帮助理解，我画了一个简单的抽象图，场景三里面，PropertyBean出现了两种类型bean，一种是Spring容器中管理的PropertyBean bean，applicationName的值spring可以自动注入， 一种是手动创建的PropertyBean bean，String类型的applicationName，如果没有显示赋值，默认为空。
 ![img.png](https://www.yuanjava.cn/assets/md/spring/value-null.png)
 
 
@@ -135,8 +146,7 @@ public class SpringElService {
 ## 总结
 
 - 本文通过几个常见的错误场景分析了@Value获取值为空的原因
-- spring为开发提供了很多便捷，但是我们应该多去了解spring的使用规则，最好是能了解原理，否则就会出现上面3种情况，导致获取值失败
-
+- spring为开发提供了很多便捷，但是稍微不注意就可能导致异常，所以对于一个新的框架，了解原理是很有必要，正所谓知其然还要知其所以然。
 
 
 ## 最后
