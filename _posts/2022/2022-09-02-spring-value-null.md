@@ -99,7 +99,7 @@ public class SpringElService {
 这种场景最容易被忽视，为什么获取的值为null？我画了一个简单的抽象图帮助理解，场景三种有两种bean，一种是Spring容器中管理的bean，applicationName的值可以spring主动注入，
 一种是手动创建的bean，String类型的applicationName，如果没有显示赋值，默认为空。通过图解是不是就能很好的理解为什么这种场景获取值为null了。
 
-![img.png](../../assets/md/spring/value-null.png)
+![img.png](https://www.yuanjava.cn/assets/md/spring/value-null.png)
 
 
 正确使用方式如下代码：
