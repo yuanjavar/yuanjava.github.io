@@ -293,12 +293,6 @@
   <lastmod>2022-08-02</lastmod>
   <changefreq>daily</changefreq>
  </url>
-<url>
-  <loc>https://www.yuanjava.cn/java/2022/08/24/single-responsibility.html</loc>
-  <priority>0.5</priority>
-  <lastmod>2022-08-24</lastmod>
-  <changefreq>daily</changefreq>
- </url>
  <url>
   <loc>https://www.yuanjava.cn/java/2022/08/18/java-stream-and-for.html</loc>
   <priority>0.5</priority>
@@ -312,25 +306,38 @@
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://www.yuanjava.cn/dynamodb/2022/08/27/open-closed-principle.html</loc>
-  <priority>0.5</priority>
-  <lastmod>2022-08-27</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
   <loc>https://www.yuanjava.cn/dynamodb/2022/08/28/dynamodb-global-secondary-index.html</loc>
   <priority>0.5</priority>
   <lastmod>2022-08-28</lastmod>
   <changefreq>daily</changefreq>
  </url>
+
  <url>
-  <loc>https://www.yuanjava.cn/dynamodb/2022/08/29/liskov-substitution-principle.html</loc>
+  <loc>https://www.yuanjava.cn/framework/2022/08/24/single-responsibility.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2022-08-24</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://www.yuanjava.cn/framework/2022/08/27/open-closed-principle.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2022-08-27</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://www.yuanjava.cn/framework/2022/08/29/liskov-substitution-principle.html</loc>
   <priority>0.5</priority>
   <lastmod>2022-08-29</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://www.yuanjava.cn/dynamodb/2022/08/30/interface-segregation-principle.html</loc>
+  <loc>https://www.yuanjava.cn/framework/2022/08/30/interface-segregation-principle.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2022-08-30</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://www.yuanjava.cn/framework/2022/09/01/dependency-inversion-principle.html</loc>
   <priority>0.5</priority>
   <lastmod>2022-08-30</lastmod>
   <changefreq>daily</changefreq>
