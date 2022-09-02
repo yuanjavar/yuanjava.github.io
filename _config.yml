@@ -124,15 +124,9 @@ navs:
         subLabel: DynamoDB
 
   -
-    href: /
+    href: /framework.html
     label: 架构
-    subnav:
-
-      - subHref: /framework.html
-        subLabel: 架构
-
-      - subHref: /algorithm.html
-        subLabel: 算法
+    target: _self
 
   -
     href: /interview.html
